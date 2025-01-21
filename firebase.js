@@ -10,6 +10,9 @@ const firebaseConfig = {
   messagingSenderId: "599611697635",
   appId: "1:599611697635:web:cc7282caf7a7750f2198d6",
   measurementId: "G-LDLKJ45NZ6"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID, 
 };
 
 const app = initializeApp(firebaseConfig);
